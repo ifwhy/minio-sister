@@ -13,7 +13,7 @@ async function uploadFile() {
   });
 
   await minio.send(upload);
-  console.log("✅ File uploaded!");
+  console.log("File uploaded!");
 }
 
 uploadFile();

@@ -9,9 +9,9 @@ async function deleteFile() {
     });
 
     const response = await minio.send(command);
-    console.log("✅ File berhasil dihapus:", response);
+    console.log("File berhasil dihapus:", response);
   } catch (err) {
-    console.error("❌ Gagal hapus file:", err);
+    console.error("Gagal hapus file:", err);
   }
 }
 

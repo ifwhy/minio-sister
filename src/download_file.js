@@ -13,7 +13,7 @@ async function downloadFile() {
   const response = await minio.send(getObject);
   const fileStream = fs.createWriteStream("../downloaded/install-docker.png");
   response.Body.pipe(fileStream);
-  console.log("📥 File downloaded!");
+  console.log("File downloaded!");
 }
 
 downloadFile();
