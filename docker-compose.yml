@@ -11,5 +11,5 @@ services:
       MINIO_ROOT_USER: admin
       MINIO_ROOT_PASSWORD: admin123
     volumes:
-      - "D:/Informatics/minio/" # sesuaikan data volume
+      - ./data:/data
     command: ["server", "/data", "--console-address", ":9001"]
