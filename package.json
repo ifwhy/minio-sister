@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Ivan Wahyu Nugroho & Fredy Tri Ramadhan"
+  },
+  "scripts": {
+    "upload": "node src/upload_file.js",
+    "download": "node src/download_file.js",
+    "list": "node src/list_bucket.js",
+    "delete": "node src/delete_file.js"
+  },
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.899.0",
